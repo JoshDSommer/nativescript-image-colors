@@ -23,7 +23,7 @@ export class ImageColors {
 	private static UIDeviceRGBColoSpace(uicolor: any): Color {
 		let rgbStrings: string[] = (<string>uicolor).replace('UIDeviceRGBColorSpace ', '').split(' ');
 		let rgbNumbers: number[] = <any>rgbStrings.map(value => parseFloat(value) * 255);
-		return new Color(rgbNumbers[0], rgbNumbers[1], rgbNumbers[2], rgbNumbers[3]);
+		return new Color(rgbNumbers[0], rgbNumbers[1], rgbNumbers[2], 1);
 	}
 }
 
