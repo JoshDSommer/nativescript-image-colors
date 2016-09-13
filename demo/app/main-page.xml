@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded">
+ <TabView id="tabView" selectedIndexChanged="{{ tabChange }}">
+   <TabView.items>
+     <TabViewItem title="Image 1">
+       <TabViewItem.view>
+          <Image id="image0" src="~/ricknmorty.jpg"  stretch="aspectFit" />
+       </TabViewItem.view>
+     </TabViewItem>
+     <TabViewItem title="Image 2">
+       <TabViewItem.view>
+          <Image id="image1" src="~/season.jpg" width="200"  stretch="aspectFit" />
+       </TabViewItem.view>
+     </TabViewItem>
+        <TabViewItem title="Image 3">
+       <TabViewItem.view>
+          <Image id="image2" src="~/schwifty.jpg"   stretch="aspectFit" />
+       </TabViewItem.view>
+     </TabViewItem>
+   </TabView.items>
+ </TabView>
+</Page>
