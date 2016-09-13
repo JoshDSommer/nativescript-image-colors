@@ -1,6 +1,6 @@
-import { IColorPalette } from './nativescript-image-colors.common';
+import { ColorPalette } from './nativescript-image-colors.common';
 import { Image } from 'ui/image';
 export declare class ImageColors {
-    static getColorPalette(image: Image): IColorPalette;
+    static getColorPalette(image: Image): ColorPalette;
     private static UIDeviceRGBColoSpace(uicolor);
 }

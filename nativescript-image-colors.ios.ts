@@ -1,15 +1,17 @@
-import { IColorPalette} from './nativescript-image-colors.common';
+import { ColorPalette, IosPalette} from './nativescript-image-colors.common';
 import { Image } from 'ui/image';
 import { Color } from 'color';
 
 declare const SLColorArt: any;
 
 export class ImageColors {
-	public static getColorPalette(image: Image): IColorPalette {
-		let returnPalette: IColorPalette = {
+	public static getColorPalette(image: Image): ColorPalette {
+		let returnPalette: ColorPalette = {
 			color1: new Color('black'),
 			color2: new Color('black'),
 			color3: new Color('black'),
+			AndroidPalette: null,
+			IosPalette: <any>{}
 		};
 
 		let colors = SLColorArt.alloc().initWithImage(image.ios.image);
@@ -17,6 +19,13 @@ export class ImageColors {
 		returnPalette.color1 = this.UIDeviceRGBColoSpace(colors.backgroundColor.toString());
 		returnPalette.color2 = this.UIDeviceRGBColoSpace(colors.primaryColor.toString());
 		returnPalette.color3 = this.UIDeviceRGBColoSpace(colors.secondaryColor.toString());
+
+		returnPalette.IosPalette = <IosPalette>{
+			backgroundColor: this.UIDeviceRGBColoSpace(colors.backgroundColor.toString()),
+			primaryColor: this.UIDeviceRGBColoSpace(colors.primaryColor.toString()),
+			secondaryColor: this.UIDeviceRGBColoSpace(colors.secondaryColor.toString()),
+			detailColor: this.UIDeviceRGBColoSpace(colors.detailColor.toString())
+		}
 		return returnPalette;
 	}
 

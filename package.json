@@ -1,6 +1,6 @@
 {
   "name": "nativescript-image-colors",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "NativeScript colors from images.",
   "main": "nativescript-image-colors.js",
   "typings": "index.d.ts",
