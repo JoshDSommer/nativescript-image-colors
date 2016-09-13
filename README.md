@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/dt/nativescript-image-colors.svg?label=npm%20downloads)](https://www.npmjs.com/package/nativescript-image-colors)
 
 
-![Nativescript Play Pause Button](https://raw.githubusercontent.com/TheOriginalJosh/nativescript-play-pause-button/master/screenshot.png)
+![NativeScript image colors](https://raw.githubusercontent.com/TheOriginalJosh/nativescript-image-colors/master/screenshot.png)
 
 
 ```typescript
