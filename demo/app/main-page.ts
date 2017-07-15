@@ -29,7 +29,7 @@ export class mainvm extends observable.Observable {
         // Initialize default values.
         setTimeout(() => {
             this.setColors(0);
-        },100)
+        },200)
 
     }
     tabChange(args: SelectedIndexChangedEventData): void {
