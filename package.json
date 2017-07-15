@@ -1,6 +1,6 @@
 {
   "name": "nativescript-image-colors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "NativeScript colors from images.",
   "main": "nativescript-image-colors.js",
   "typings": "index.d.ts",
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "demo.ios": "npm run preparedemo && cd demo && tns emulate ios",
+    "demo.ios": "npm run preparedemo && cd demo && tns run ios",
     "demo.android": "npm run preparedemo && cd demo && tns run android",
     "preparedemo": "npm run build && cd demo && tns plugin remove nativescript-image-colors && tns plugin add .. && tns install",
     "setup": "npm i && cd demo && npm i && cd .. && npm run build && cd demo && tns plugin add .. && cd .."
