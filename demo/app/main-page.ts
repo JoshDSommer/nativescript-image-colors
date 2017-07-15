@@ -2,7 +2,6 @@ import * as observable from 'data/observable';
 import * as pages from 'ui/page';
 import { SelectedIndexChangedEventData, TabView, TabViewItem } from 'ui/tab-view';
 import { Image } from 'ui/image';
-import {HelloWorldModel} from './main-view-model';
 import { ImageColors  } from 'nativescript-image-colors/nativescript-image-colors';
 
 
@@ -47,9 +46,9 @@ export class mainvm extends observable.Observable {
                 colors = ImageColors.getColorPalette(this.image2);
                 break;
         }
-         console.log(JSON.stringify(colors));
+         console.log(JSON.stringify(colors.color1));
 
-        this.tabView.tabsBackgroundColor = colors.color1;
+        this.tabView.backgroundColor = colors.color1;
         this.tabView.color = colors.color2;
         this.tabView.backgroundColor = colors.color2;
         this.page.actionBar.backgroundColor =colors.color1;
