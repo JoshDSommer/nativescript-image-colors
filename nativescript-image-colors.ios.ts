@@ -32,7 +32,6 @@ export class ImageColors {
 	private static UIDeviceRGBColoSpace(uicolor: any): Color {
 		let rgbStrings: string[] = (<string>uicolor).replace('UIDeviceRGBColorSpace ', '').split(' ');
 		let rgbNumbers: number[] = <any>rgbStrings.filter(value => !isNaN(<any>value)).map(value => parseFloat(value) * 255);
-		console.log(rgbNumbers)
 		return new Color(rgbNumbers[0], rgbNumbers[1], rgbNumbers[2], 1);
 	}
 }
