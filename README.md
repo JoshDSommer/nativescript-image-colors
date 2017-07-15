@@ -9,7 +9,7 @@
 ## Example
 
 ```typescript
-import { ImageColors  } from 'nativescript-image-colors/nativescript-image-colors';
+import { ImageColors  } from 'nativescript-image-colors';
 
 
 
