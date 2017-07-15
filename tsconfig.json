@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "noEmitOnError": false,
+        "lib": [
+            "es2016"
+        ]
+    },
+    "files": [
+        "./node_modules/tns-core-modules/tns-core-modules.d.ts",
+        "./node_modules/typescript/lib/lib.es6.d.ts",
+        "nativescript-image-colors.common.ts",
+        "nativescript-image-colors.android.ts",
+        "nativescript-image-colors.ios.ts"
+    ],
+    "exclude": [
+        "./demo/**/*"
+    ]
+}
