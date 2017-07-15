@@ -1,4 +1,4 @@
-import { ColorPalette, IosPalette} from './nativescript-image-colors.common';
+import { ColorPalette, IosPalette } from './nativescript-image-colors.common';
 import { Image } from 'tns-core-modules/ui/image';
 import { Color } from 'tns-core-modules/color';
 
@@ -31,7 +31,8 @@ export class ImageColors {
 
 	private static UIDeviceRGBColoSpace(uicolor: any): Color {
 		let rgbStrings: string[] = (<string>uicolor).replace('UIDeviceRGBColorSpace ', '').split(' ');
-		let rgbNumbers: number[] = <any>rgbStrings.map(value => parseFloat(value) * 255);
+		let rgbNumbers: number[] = <any>rgbStrings.filter(value => !isNaN(<any>value)).map(value => parseFloat(value) * 255);
+		console.log(rgbNumbers)
 		return new Color(rgbNumbers[0], rgbNumbers[1], rgbNumbers[2], 1);
 	}
 }
