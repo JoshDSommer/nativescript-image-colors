@@ -52,7 +52,7 @@ export class mainvm extends observable.Observable {
                 break;
         }
 
-        console.log(JSON.stringify(colors.color1));
+        console.log(JSON.stringify(colors.color1.hex));
 
         this.tabView.backgroundColor = colors.color1;
         this.tabView.color = colors.color2;

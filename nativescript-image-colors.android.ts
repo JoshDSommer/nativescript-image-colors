@@ -3,6 +3,7 @@ import { Image } from 'tns-core-modules/ui/image';
 import { Color } from 'tns-core-modules/color';
 
 declare const android: any;
+declare const global: any;
 export class ImageColors {
 
 	public static getColorPalette(image: Image): ColorPalette {
@@ -24,7 +25,7 @@ export class ImageColors {
 			return returnPalette;
 		}
 
-		let Palette = new android.support.v7.graphics.Palette.from(bmp).generate();
+		let Palette = new global.androidx.palette.graphics.Palette.from(bmp).generate();
 		if (Palette != null) {
 			let vibrantSwatch = Palette.getVibrantSwatch();
 			let darkVibrantSwatch = Palette.getDarkVibrantSwatch();

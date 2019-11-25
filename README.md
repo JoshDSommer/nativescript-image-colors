@@ -5,6 +5,7 @@
 
 ![NativeScript image colors](https://raw.githubusercontent.com/TheOriginalJosh/nativescript-image-colors/master/screenshot.png)
 
+This is the version migrated to Nativescript 6
 
 ## Example
 
